@@ -1,0 +1,14 @@
+:root {
+    
+}
+
+
+
+/* Tablet horizontal */
+@media (max-width: 1080px) { }
+/* Tablet vertical */
+@media (max-width: 768px) { }
+/* Mobil 1 */
+@media (max-width: 480px) { }
+/* Mobil 2 */
+@media (max-width: 375px) { }
