@@ -1,20 +1,23 @@
 const dotBtns = Array.from(document.getElementsByClassName('dot-btn'));
 const leftBtn = document.getElementsByClassName('left-btn');
 const rightBtn = document.getElementsByClassName('right-btn');
-const backgroundIndex = document.getElementById('main-container');
-
+const backgroundIndex = document.getElementById('background-container');
+dotBtns[0].classList.add('active');
 
 dotBtns.forEach((el, i) => {
     el.addEventListener('click', ()=> {
         console.log(`boton apretado dot ${i}`);
         backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
         dotBtns.forEach((e) => {
-            e.style.background = 'transparent';
-            e.style.border = '1px solid white';
+            // e.style.background = 'transparent';
+            e.classList.remove('active');
+            // e.style.border = '1px solid white';
         })
-        el.style.background = 'white';
+        // el.style.background = 'white';
+        el.classList.add('active');
     });
 })
+
 var i = 0;
 leftBtn[0].addEventListener('click', () => {
     console.log(`boton apretado < i= ${i}`)
