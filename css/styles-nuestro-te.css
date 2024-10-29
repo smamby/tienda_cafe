@@ -85,7 +85,7 @@ h3 {
 .intensity-bar span {
     display: block;
     height: 100%;
-    background-color: var(--verdePalido);
+    background-color: #62784f;
 }
 
 /* Tablets y pantallas medianas (2 cards por fila) */
