@@ -1,3 +1,19 @@
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
+    --colorPrimario: #04c663;
+    --verdePalido: #647852;
+    --colorSecundario: #1A1A1A;
+    --blanco: #fff;
+    --blancoSuave: #eee;
+    --negro: #000;
+    --negroSuave: #333;
+    --gris: #666;     
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -48,6 +64,7 @@ body {
     width: auto;
     margin-right: 60%;
     margin-left: 15%;
+    color: var(--blanco);
 }
 .left-btn, .right-btn {
     display: flex;
