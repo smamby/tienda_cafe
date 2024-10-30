@@ -137,12 +137,10 @@ body {
     cursor: pointer;
 }
 .left-btn {
-    /* padding-right: 5%; */
     position: absolute;
     left: -19px;    
 }
 .right-btn {
-    /* padding-left: 5%; */
     position: absolute;
     left: calc(100% + 19px);
 }
@@ -244,7 +242,7 @@ body {
 }
 #nuestprodH1 {
     font-size: 2rem;
-    color: var(--negro);
+    color: var(--colorSecundario);
     
 }
 #nuestprod-line {
@@ -253,11 +251,59 @@ body {
     width: 10rem;
     margin: 2rem;
 }
+
+.nuestprod-carrusel-maincont {
+    height: 16rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#nuestprod-cont-carrusel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+    width: 100%;
+}
+#nuestprod-carrusel {
+    height: 90%;
+    width: calc(100% - 90px);
+    background-color: var(--blanco);
+    overflow-x: hidden;
+}
+#nuestprod-carrusel-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: auto;
+    height: 100%;
+    background-position-x: 0px;
+}
+.nuestprod-left-btn, .nuestprod-right-btn {
+    display: flex;
+    align-items: center;
+}
+.nuestprod-left-btn > img, .nuestprod-right-btn > img {
+    height: 2rem;
+    cursor: pointer;
+}
+.nuestprod-left-btn {
+    position: absolute;
+    left: 19px;
+    filter: invert();  
+}
+.nuestprod-right-btn {
+    position: absolute;
+    left: calc(100% - 38px);
+    filter: invert();
+}
+
 .dot-btn-containerNP {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 0vh;
 }
 .dot-btnNP {
     height: 0.7rem;
@@ -268,9 +314,12 @@ body {
     border: 1px var(--colorSecundario) solid;
     cursor: pointer;
 }
-
 .dot-btnNP:hover {
     border: 2px var(--colorSecundario) solid; 
+}
+.dot-btnNP:active{
+    background: var(--colorSecundario);
+    border: 1px solid var(--colorSecundario);
 }
 .dot-btnNP.active {
     background: var(--colorSecundario);
