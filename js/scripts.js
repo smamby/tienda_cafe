@@ -2,14 +2,45 @@ const dotBtns = Array.from(document.getElementsByClassName('dot-btn'));
 const leftBtn = document.getElementsByClassName('left-btn');
 const rightBtn = document.getElementsByClassName('right-btn');
 const backgroundIndex = document.getElementById('background-container');
+let carruselTextH1 = document.getElementById('carrusel-h1');
+let carruselTextH2 = document.getElementById('carrusel-h2');
+let carruselTextP = document.getElementById('carrusel-p');
+let carruselBtn =  document.getElementById('btn-carusel');
+const content = [
+    ['Tu té preferido',
+        'SIEMPRE CERCA',
+        'Blends, varietales, tés del mundo.<br>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.',
+        'ENCONTRANOS'],
+    ['Probá nuestras',
+        'COMBINACIONES',
+        '100% hierbas naturales sin aditivos',
+        'DESCUBRILAS'],
+    ['Desde 2003',
+        'COSECHANDO TU TÉ',
+        'Años de experiencia cuidando cada paso del proceso.',
+        '']
+];
+function actualizarCarrucel(i) {
+    backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+    carruselTextH2.textContent = content[i][0]
+    carruselTextH1.textContent = content[i][1]
+    carruselTextP.innerHTML = content[i][2]
+    carruselBtn.textContent = content[i][3]
+    if (i==2) {
+        carruselBtn.style.display='none';
+    } else {
+        carruselBtn.style.display='flex';
+    }
+}
+
 dotBtns[0].classList.add('active');
 var i = 0;
 
 dotBtns.forEach((el, ix) => {
     el.addEventListener('click', ()=> {
         console.log(`boton apretado dot ${ix}`);
-        backgroundIndex.style.backgroundImage = `url('./img/home-background-${ix}.jpg')`;
         i = ix;
+        actualizarCarrucel(i)
         dotBtns.forEach((e) => {
             e.classList.remove('active');
         })
@@ -21,11 +52,11 @@ leftBtn[0].addEventListener('click', () => {
     console.log(`boton apretado < i= ${i}`)
     if (i == 0) {
         i = 2;
-        backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+        actualizarCarrucel(i)
         console.log(`foto i= ${i}`)
     } else {
         i -= 1;
-        backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+        actualizarCarrucel(i)
         console.log(`foto i= ${i}`)
     }
     dotBtns.forEach((e) => {
@@ -38,11 +69,11 @@ rightBtn[0].addEventListener('click', () => {
     console.log(`boton apretado > i= ${i}`)
     if (i == 2) {
         i = 0;
-        backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+        actualizarCarrucel(i)
         console.log(`foto i= ${i}`)
     } else {
         i += 1;
-        backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+        actualizarCarrucel(i)
         console.log(`foto i= ${i}`)
     }
     dotBtns.forEach((e) => {
@@ -57,7 +88,7 @@ setInterval(function () {
     } else {
         i += 1;
     }
-    backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
+    actualizarCarrucel(i)
     console.log(`foto i= ${i}`)
     
     dotBtns.forEach((e) => {
@@ -66,3 +97,4 @@ setInterval(function () {
     dotBtns[i].classList.add('active');
         
 }, 5000);
+
