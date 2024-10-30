@@ -451,6 +451,13 @@ body {
 #cualvas {
     font-size: 2rem;
 }
+#content-cont {
+    display: flex;
+    margin: 1rem 5rem;
+}
+.col {
+    margin: 0 1rem;
+}
 
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
