@@ -126,26 +126,26 @@ const dotBtnNP = Array.from(document.getElementsByClassName('dot-btnNP'));
 
 leftBtnCarrusel.addEventListener('click', function() {
     console.log('pressed left');
-    carruselContentNP.style.left = '0%'
+    carruselContentNP.style.justifyContent = 'left';
     dotBtnNP[0].classList.add('active');
     dotBtnNP[1].classList.remove('active');
 })
 rightBtnCarrusel.addEventListener('click', function() {
     console.log('pressed right');
-    carruselContentNP.style.left = '-73%'
+    carruselContentNP.style.justifyContent = 'right';
     dotBtnNP[1].classList.add('active');
     dotBtnNP[0].classList.remove('active');
 })
 dotBtnNP[0].classList.add('active');
 dotBtnNP[0].addEventListener('click', function() {
-    carruselContentNP.style.left = '0%';
+    carruselContentNP.style.justifyContent = 'left';
     dotBtnNP.forEach((e) => {
         e.classList.remove('active');
     })
     dotBtnNP[0].classList.add('active');
 })
 dotBtnNP[1].addEventListener('click', function() {
-    carruselContentNP.style.left = '-73%';
+    carruselContentNP.style.justifyContent = 'right';
     dotBtnNP.forEach((e) => {
         e.classList.remove('active');
     })

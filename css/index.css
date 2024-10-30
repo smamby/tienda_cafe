@@ -253,7 +253,7 @@ body {
 }
 
 .nuestprod-carrusel-maincont {
-    height: 16rem;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -263,7 +263,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 16rem;
+    height: auto;
     width: 100%;
 }
 #nuestprod-carrusel {
@@ -278,22 +278,23 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     width: auto;
-    height: 100%;
-    position: absolute;
-    left: 0%;
+    height: auto;
+    /* position: absolute; */
+    /* left: 0%; */
+    justify-content: left;
 }
 .card-front {
     padding: 0;
-    top: -50px;
-    scale: 0.8;
+    top: 0px;
+    scale: 1;
 }
 .card-back {
     width: 60%;
     height: 90%;
     max-height: 70%;
-    top: -3%;
+    top: 10%;
     object-fit: fill;
-    scale: 0.8;
+    scale: 1;
     margin-bottom: 10px;
     border-radius: 10px;
 }
@@ -315,17 +316,6 @@ body {
     left: calc(100% - 38px);
     filter: invert();
 }
-/* .nuestprod-left-btn:checked {
-    
-    #nuestprod-carrusel-content {
-        transform: translateX(0);
-    }
-}
-.nuestprod-right-btn:checked {
-    #nuestprod-carrusel-content {
-        transform: translateX(-50%);
-    }
-} */
 
 .dot-btn-containerNP {
     display: flex;
@@ -353,7 +343,31 @@ body {
     background: var(--colorSecundario);
     border: 1px solid var(--colorSecundario);
 }
-
+.tutorial-nuestromenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    height: auto;
+    width: 100%;
+    padding: 40px;
+    gap: 2rem;
+}
+#tutorial-cont {
+    background-image: url('../img/imgIndexTutorials.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+    width: 100%;
+    padding: 2rem;
+}
+#ennuestroslocales {
+    background-image: url('../img/imgIndexLocales.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30rem;
+    width: 100%;
+    padding: 2rem;
+}
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
    
