@@ -437,9 +437,19 @@ body {
 
 /* --------------- NUESTRO TE ---------------*/
 .nuest-te {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--blancoSuave);
     width: 100%;
     height: 900px;
+}
+#nuestro {
+    color: var(--colorPrimario);
+    font-size: medium;
+}
+#cualvas {
+    font-size: 2rem;
 }
 
 /* Tablet horizontal */
