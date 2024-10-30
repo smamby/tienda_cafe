@@ -1,3 +1,5 @@
+// CARRUSEL PORTADA
+
 const dotBtns = Array.from(document.getElementsByClassName('dot-btn'));
 const leftBtn = document.getElementsByClassName('left-btn');
 const rightBtn = document.getElementsByClassName('right-btn');
@@ -97,4 +99,5 @@ setInterval(function () {
     dotBtns[i].classList.add('active');
         
 }, 5000);
+
 

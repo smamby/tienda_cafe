@@ -271,6 +271,7 @@ body {
     width: calc(100% - 90px);
     background-color: var(--blanco);
     overflow-x: hidden;
+    position: relative;
 }
 #nuestprod-carrusel-content {
     display: flex;
@@ -278,26 +279,53 @@ body {
     flex-direction: row;
     width: auto;
     height: 100%;
-    background-position-x: 0px;
+    position: absolute;
+    left: 0%;
 }
-.nuestprod-left-btn, .nuestprod-right-btn {
+.card-front {
+    padding: 0;
+    top: -50px;
+    scale: 0.8;
+}
+.card-back {
+    width: 60%;
+    height: 90%;
+    max-height: 70%;
+    top: -3%;
+    object-fit: fill;
+    scale: 0.8;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#nuestprod-left-btn, #nuestprod-right-btn {
     display: flex;
     align-items: center;
 }
-.nuestprod-left-btn > img, .nuestprod-right-btn > img {
+#nuestprod-left-btn > img, #nuestprod-right-btn > img {
     height: 2rem;
     cursor: pointer;
 }
-.nuestprod-left-btn {
+#nuestprod-left-btn {
     position: absolute;
     left: 19px;
     filter: invert();  
 }
-.nuestprod-right-btn {
+#nuestprod-right-btn {
     position: absolute;
     left: calc(100% - 38px);
     filter: invert();
 }
+/* .nuestprod-left-btn:checked {
+    
+    #nuestprod-carrusel-content {
+        transform: translateX(0);
+    }
+}
+.nuestprod-right-btn:checked {
+    #nuestprod-carrusel-content {
+        transform: translateX(-50%);
+    }
+} */
 
 .dot-btn-containerNP {
     display: flex;
