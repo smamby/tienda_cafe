@@ -8,26 +8,31 @@ let carruselTextH1 = document.getElementById('carrusel-h1');
 let carruselTextH2 = document.getElementById('carrusel-h2');
 let carruselTextP = document.getElementById('carrusel-p');
 let carruselBtn =  document.getElementById('btn-carusel');
+let carruselBtnAccess = document.getElementById('btn-carusel-access');
 const content = [
     ['Tu té preferido',
         'SIEMPRE CERCA',
         'Blends, varietales, tés del mundo.<br>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.',
-        'ENCONTRANOS'],
+        'ENCONTRANOS',
+        '/contacto.html'],
     ['Probá nuestras',
         'COMBINACIONES',
         '100% hierbas naturales sin aditivos',
-        'DESCUBRILAS'],
+        'DESCUBRILAS',
+        '/nuestro-te.html'],
     ['Desde 2003',
         'COSECHANDO TU TÉ',
         'Años de experiencia cuidando cada paso del proceso.',
+        '',
         '']
 ];
 function actualizarCarrucel(i) {
     backgroundIndex.style.backgroundImage = `url('./img/home-background-${i}.jpg')`;
-    carruselTextH2.textContent = content[i][0]
-    carruselTextH1.textContent = content[i][1]
-    carruselTextP.innerHTML = content[i][2]
-    carruselBtn.textContent = content[i][3]
+    carruselTextH2.textContent = content[i][0];
+    carruselTextH1.textContent = content[i][1];
+    carruselTextP.innerHTML = content[i][2];
+    carruselBtn.textContent = content[i][3];
+    carruselBtnAccess.href = content[i][4];
     if (i==2) {
         carruselBtn.style.display='none';
     } else {

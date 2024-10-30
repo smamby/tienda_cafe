@@ -132,6 +132,7 @@ body {
 .left-btn, .right-btn {
     display: flex;
     align-items: center;
+    transition: left 0.4s ease;
 }
 .left-btn > img, .right-btn > img {
     height: 2rem;
@@ -354,26 +355,68 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;    
-    height: auto;
+    height: 100%;
     width: 100%;
     padding: 40px;
     gap: 2rem;
 }
 #tutorial-cont {
-    background-image: url('../img/imgIndexTutorials.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: auto;
+    height: 100%;
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
-#ennuestroslocales {
-    background-image: url('../img/imgIndexLocales.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 30rem;
+#ennuestroslocales-cont {
+    height: 100%;
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.tutmen-pic {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.4s ease;
+}
+.tutmen-pic:hover {
+    transform: scale(1.08);
+    transition: 0.5s;
+}
+.tutmen-content {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}
+.tutmen-tapetext{
+    height: 1.5rem;
+    width: fit-content;
+    color: var(--colorSecundario);
+    background-color: var(--blancoSuave);
+    padding: 0rem 1rem;
+}
+.tutmen-titleh1{
+    font-size: 2rem;
+    color: var(--blancoSuave);
+}
+.tutmen-btn{
+    display: flex;
+    height: 2rem;
+    width: fit-content;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--colorSecundario);
+    color: var(--blancoSuave);
+    font-size: small;
 }
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
@@ -393,7 +436,11 @@ body {
 }
 
 /* --------------- NUESTRO TE ---------------*/
-
+.nuest-te {
+    background-color: var(--blancoSuave);
+    width: 100%;
+    height: 900px;
+}
 
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
