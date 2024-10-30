@@ -49,11 +49,13 @@ h2 {
 p {
     font-family: var(--font-paragraph);
 }
-
+html {
+    width: 100%;
+}
 body {
     background-color: var(--colorSecundario);
     display: flex;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;    
@@ -63,7 +65,7 @@ body {
 .main-container {
     display: flex;
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin: 113px 0 0 0;
@@ -88,7 +90,7 @@ body {
     justify-content: space-evenly;
     height: 100%;
     width: 100%;
-    padding: 2% 2%;
+    padding: 0;
 }
 .ppal-content {
     display: flex;
@@ -96,10 +98,11 @@ body {
     align-items: center;
     height: 90%;
     position: relative;
+    overflow-x: hidden;
 }
 .text {
     width: auto;
-    margin-right: 50%;
+    margin-right: 40%;
     margin-left: 15%;
     color: var(--blanco);
 }
@@ -110,14 +113,18 @@ body {
 #btn-carusel {
     display: flex;
     height: 5vh;
-    width: 12vw;
+    width: 12rem;
     margin-top: 2rem;
     font-family: var(--font-paragraph);
     font-size: 1.1rem;
     color: var(--blanco);
-    border: var(--blanco) 2px solid;
+    border: var(--gris) 2px solid;
     justify-content: center;
     align-items: center;
+}
+#btn-carusel:hover {
+    border: var(--blanco) 2px solid;
+    transition: 0.4s;
 }
 .left-btn, .right-btn {
     display: flex;
@@ -130,7 +137,7 @@ body {
 .left-btn {
     /* padding-right: 5%; */
     position: absolute;
-    left: -10%;    
+    left: -19px;    
 }
 .right-btn {
     /* padding-left: 5%; */
@@ -139,11 +146,11 @@ body {
 }
 .content-container:hover {
     .left-btn {
-        left: 0%;
+        left: calc(0% + 19px);
         transition: 0.4s; 
     }
     .right-btn {
-        left: calc(100% - 32px);
+        left: calc(100% - 38px);
         transition: 0.4s; 
     }
 }
@@ -152,7 +159,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 6vh;
+    margin-top: 2vh;
 }
 .dot-btn {
     height: 1rem;
@@ -174,10 +181,50 @@ body {
 
 
 /* Tablet horizontal */
-@media (max-width: 1080px) { }
+@media (max-width: 1080px) { 
+    .text {
+        margin-right: 30%;
+    }
+    #carrusel-h1 {
+        font-size: 3.4rem;
+    }
+    #carrusel-h2 {
+        font-size: 2.4rem;
+    }
+}
 /* Tablet vertical */
-@media (max-width: 768px) { }
+@media (max-width: 768px) {
+    .text {
+        margin-right: 20%;
+    }
+    #carrusel-h1 {
+        font-size: 3rem;
+    }
+    #carrusel-h2 {
+        font-size: 2rem;
+    }
+ }
 /* Mobil 1 */
-@media (max-width: 480px) { }
+@media (max-width: 480px) { 
+    .text {
+        margin-right: 10%;
+    }
+    #carrusel-h1 {
+        font-size: 3rem;
+    }
+    #carrusel-h2 {
+        font-size: 2rem;
+    }
+}
 /* Mobil 2 */
-@media (max-width: 375px) { }
+@media (max-width: 375px) { 
+    .text {
+        margin-right: 0;
+    }
+    #carrusel-h1 {
+        font-size: 2.5rem;
+    }
+    #carrusel-h2 {
+        font-size: 1.8rem;
+    }
+}
