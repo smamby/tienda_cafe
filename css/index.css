@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Oswald_regular';
     src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: 300;
+    font-weight: 200;
 }
 @font-face {
     font-family: 'Oswald_bolder';
@@ -99,9 +99,25 @@ body {
 }
 .text {
     width: auto;
-    margin-right: 60%;
+    margin-right: 50%;
     margin-left: 15%;
     color: var(--blanco);
+}
+#carrusel-h1 {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+#btn-carusel {
+    display: flex;
+    height: 5vh;
+    width: 12vw;
+    margin-top: 2rem;
+    font-family: var(--font-paragraph);
+    font-size: 1.1rem;
+    color: var(--blanco);
+    border: var(--blanco) 2px solid;
+    justify-content: center;
+    align-items: center;
 }
 .left-btn, .right-btn {
     display: flex;
