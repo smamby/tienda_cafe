@@ -197,38 +197,51 @@ const carruselContentNP = document.getElementById('nuestprod-carrusel-content');
 const leftBtnCarrusel = document.getElementById('nuestprod-left-btn');
 const rightBtnCarrusel = document.getElementById('nuestprod-right-btn');
 const dotBtnNP = Array.from(document.getElementsByClassName('dot-btnNP'));
+let dim = -100;
+ResizingCarrusel(dim);
+window.addEventListener('resize', () => {
+    let width = window.innerWidth;
 
-leftBtnCarrusel.addEventListener('click', function() {
-    console.log('pressed left');
-    //carruselContentNP.style.justifyContent = 'left';
-    carruselContentNP.style.transition = 'transform 0.5s ease';
-    carruselContentNP.style.transform = 'translateX(0%)'
-    dotBtnNP[0].classList.add('active');
-    dotBtnNP[1].classList.remove('active');
-})
-rightBtnCarrusel.addEventListener('click', function() {
-    console.log('pressed right');
-    //carruselContentNP.style.justifyContent = 'right';
-    carruselContentNP.style.transition = 'transform 0.5s ease';
-    carruselContentNP.style.transform = 'translateX(-100%)'
-    dotBtnNP[1].classList.add('active');
-    dotBtnNP[0].classList.remove('active');
+    if (width > 1080) {
+        dim = -100
+        ResizingCarrusel(dim);
+    } else if (width < 1080 && width > 768) {
+        dim = -80
+        ResizingCarrusel(dim);
+    }
 })
 
-dotBtnNP[0].classList.add('active');
-dotBtnNP[0].addEventListener('click', function() {
-    carruselContentNP.style.transition = 'transform 0.5s ease';
-    carruselContentNP.style.transform = 'translateX(0%)'
-    dotBtnNP.forEach((e) => {
-        e.classList.remove('active');
+function ResizingCarrusel(dim) {
+    leftBtnCarrusel.addEventListener('click', function() {
+        console.log('pressed left');
+        carruselContentNP.style.transition = 'transform 0.5s ease';
+        carruselContentNP.style.transform = 'translateX(0%)'
+        dotBtnNP[0].classList.add('active');
+        dotBtnNP[1].classList.remove('active');
     })
+    rightBtnCarrusel.addEventListener('click', function() {
+        console.log('pressed right');
+        carruselContentNP.style.transition = 'transform 0.5s ease';
+        carruselContentNP.style.transform = `translateX(${dim}%)`;
+        dotBtnNP[1].classList.add('active');
+        dotBtnNP[0].classList.remove('active');
+    })
+
     dotBtnNP[0].classList.add('active');
-})
-dotBtnNP[1].addEventListener('click', function() {
-    carruselContentNP.style.transition = 'transform 0.5s ease';
-    carruselContentNP.style.transform = 'translateX(-100%)'
-    dotBtnNP.forEach((e) => {
-        e.classList.remove('active');
+    dotBtnNP[0].addEventListener('click', function() {
+        carruselContentNP.style.transition = 'transform 0.5s ease';
+        carruselContentNP.style.transform = 'translateX(0%)'
+        dotBtnNP.forEach((e) => {
+            e.classList.remove('active');
+        })
+        dotBtnNP[0].classList.add('active');
     })
-    dotBtnNP[1].classList.add('active');
-})
+    dotBtnNP[1].addEventListener('click', function() {
+        carruselContentNP.style.transition = 'transform 0.5s ease';
+        carruselContentNP.style.transform = 'translateX(-100%)'
+        dotBtnNP.forEach((e) => {
+            e.classList.remove('active');
+        })
+        dotBtnNP[1].classList.add('active');
+    })
+}
