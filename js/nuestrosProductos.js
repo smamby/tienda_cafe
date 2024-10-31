@@ -226,7 +226,6 @@ function ResizingCarrusel(dim) {
         dotBtnNP[1].classList.add('active');
         dotBtnNP[0].classList.remove('active');
     })
-
     dotBtnNP[0].classList.add('active');
     dotBtnNP[0].addEventListener('click', function() {
         carruselContentNP.style.transition = 'transform 0.5s ease';
