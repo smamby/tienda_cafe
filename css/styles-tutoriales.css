@@ -1,9 +1,17 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
+    width: 100%;
+    font-family: 'Oswald', sans-serif; /* ver Roboto*/
+    margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
+
 .container {
-    width: 80%;
-    margin-top: 120px;
+    width: calc(100% - 40px); /* Ajustamos el ancho para que no exceda la pantalla */
+    margin-top: 100px; /* Mantener márgenes laterales */
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: center;
     color: grey;
     display: flex;
@@ -24,31 +32,33 @@ ul {
     justify-content: center;
 }
 .grid-item {
-    flex: 0 0 45%; /* Dos elementos por línea con algo de margen */
-    margin: 10px;
+    flex: 0 0 calc(13cm); /* Espacios cuadrados de 13 cm */
+    margin: 1.1cm; /* Espacio de 1.5 cm entre los elementos */
     border: 1px solid #ddd; /* Borde opcional */
     border-radius: 5px; /* Radio opcional */
     overflow: hidden; /* Opcional: crea una vista limpia de la imagen */
     position: relative; /* Posicionamiento relativo para el contenedor */
-    display: inline-block; /* Para ajustar el tamaño */
+    display: flex; /* Cambiado para manejar el contenido */
+    justify-content: center; /* Centro el contenido */
+    align-items: center; /* Centro verticalmente el contenido */
 }
 
 .grid-item img {
     width: 100%;
-    height: 200px; /* Asegura que todas las imágenes tengan la misma altura */
+    height: 310px; /* Asegura que todas las imágenes tengan la misma altura */
     object-fit: cover; /* Ajusta la imagen para cubrir el área asignada sin distorsión */
     margin: 0; /* Elimina el margen de la imagen */
 }
 
 .grid-item h4 {
     position: absolute; /* Posicionamiento absoluto para el título */
-    top: 10px; /* Ajusta la posición superior según sea necesario */
+    top: 90px; /* Ajusta la posición superior según sea necesario */
     left: 40px; /* Ajusta la posición izquierda según sea necesario */
-    right: 70px;
+    right: 40px;
     color: white; /* Cambia el color del texto según tus necesidades */
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para la mejor visibilidad */
-    padding: 5px; /* Espaciado interno para el texto */
+   /padding: 5px; /* Espaciado interno para el texto */
     border-radius: 5px; /* Radio para un diseño más suave */
+    font-size: x-large;
 }
 
 .button {
@@ -57,8 +67,6 @@ ul {
     padding: 10px;
     text-decoration: none;
     border-radius: 5px;
-
-   
     position: absolute; /* Posicionamiento absoluto para el botón */
     top: 50%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
@@ -66,4 +74,8 @@ ul {
     background-color: transparent;
     border-bottom: 2px solid gold; /* Subrayado debajo del botón */
     text-align: center; /* Centrar el texto en el botón */
+    font-size: small;
+    font-weight: bold;
 }
+
+
