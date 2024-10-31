@@ -1,5 +1,7 @@
-body, html {
-    width: 100%;
+/*************************página Tutoriales ***************************/
+
+main, html {  /* cambié body x main*/
+    width: 100%; 
     font-family: 'Oswald', sans-serif; /* ver Roboto*/
     margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
     overflow-x: hidden; /* Evita el scroll horizontal */
@@ -19,7 +21,7 @@ body, html {
     align-items: center;
 }
  
-ul {
+ul.tips { /* personalicé ul para q no afecte header*/
     list-style-type: none;
     font-style: italic;
 }
