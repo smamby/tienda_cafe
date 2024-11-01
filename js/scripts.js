@@ -89,20 +89,20 @@ rightBtn[0].addEventListener('click', () => {
     dotBtns[i].classList.add('active');
 })
 
-setInterval(function () {
-    if (i == 2) {
-        i = 0;
-    } else {
-        i += 1;
-    }
-    actualizarCarrucel(i)
-    console.log(`foto i= ${i}`)
+// setInterval(function () {
+//     if (i == 2) {
+//         i = 0;
+//     } else {
+//         i += 1;
+//     }
+//     actualizarCarrucel(i)
+//     console.log(`foto i= ${i}`)
     
-    dotBtns.forEach((e) => {
-        e.classList.remove('active');
-    });
-    dotBtns[i].classList.add('active');
+//     dotBtns.forEach((e) => {
+//         e.classList.remove('active');
+//     });
+//     dotBtns[i].classList.add('active');
         
-}, 5000);
+// }, 5000);
 
 

@@ -49,6 +49,9 @@ h2 {
 p {
     font-family: var(--font-paragraph);
 }
+a {
+    text-decoration: none;
+}
 html {
     width: 100%;
 }
@@ -265,11 +268,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: 320px ;
     width: 100%;
 }
 #nuestprod-carrusel {
-    height: 84%;
+    height: auto;
     width: calc(100% - 90px);
     margin: 1rem;
     background-color: var(--blanco);
@@ -280,7 +283,7 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     width: auto;
-    height: auto;
+    height: fit-content;
     justify-content: left;
 }
 .card {
@@ -401,7 +404,7 @@ body {
     width: fit-content;
     color: var(--colorSecundario);
     background-color: var(--blancoSuave);
-    padding: 0rem 1rem;
+    padding: 0 2%;
 }
 .tutmen-titleh1{
     font-size: 2rem;
@@ -427,6 +430,9 @@ body {
     #dot-btnNP3 {
         display: block;
     }
+    .tutmen-tapetext{
+        font-size: xx-small;
+    }
 }
 /* Tablet vertical */
 @media (max-width: 768px) {
@@ -436,6 +442,12 @@ body {
     }
     #dot-btnNP3, #dot-btnNP4 {
         display: block;
+    }
+    .tutmen-titleh1{
+        font-size: larger;
+    }
+    .card-back > p {
+        font-size: smaller !important;
     }
  }
 /* Mobil 1 */
@@ -456,6 +468,9 @@ body {
     }
     #dot-btnNP3, #dot-btnNP4, #dot-btnNP5 {
         display: block;
+    }
+    .card-back > p {
+        font-size: x-small !important;
     }
 }
 
