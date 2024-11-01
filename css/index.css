@@ -107,9 +107,9 @@ body {
     overflow-x: hidden;
 }
 .text {
-    width: auto;
+    width: 100%;
     margin-right: 40%;
-    margin-left: 15%;
+    margin-left: 12%;
     color: var(--blanco);
 }
 #carrusel-h1 {
@@ -443,11 +443,15 @@ body {
     #dot-btnNP3, #dot-btnNP4 {
         display: block;
     }
+    .tutorial-nuestromenu {
+        flex-direction: column;
+        align-items: center;
+    }
     .tutmen-titleh1{
         font-size: larger;
     }
     .card-back > p {
-        font-size: smaller !important;
+        font-size: small !important;
     }
  }
 /* Mobil 1 */
@@ -458,6 +462,18 @@ body {
     }
     #dot-btnNP3, #dot-btnNP4, #dot-btnNP5 {
         display: block;
+    }
+    .tutmen-tapetext{
+        display: none;
+    }
+    .tutmen-titleh1{
+        font-size: medium;
+    }
+    .card-back > p {
+        font-size: x-small !important;
+    }
+    .col0 {
+        width: 460px;
     }
 }
 /* Mobil 2 */
@@ -472,6 +488,13 @@ body {
     .card-back > p {
         font-size: x-small !important;
     }
+    .tutorial-nuestromenu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col0 {
+        width: 375px;
+    }
 }
 
 /* --------------- NUESTRO TE ---------------*/
@@ -482,6 +505,7 @@ body {
     background-color: var(--blancoSuave);
     width: 100%;
     height: 100%;
+    padding-bottom: 8rem;
 }
 #nuestro {
     color: var(--colorPrimario);
@@ -499,6 +523,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.col h3 {
+    color: var(--colorPrimario);
+    font-size: medium;
+}
+.col p {
+    color: var(--colorSecundario);
+    font-size: small;
 }
 .col0 {
     display: none;
@@ -546,7 +578,69 @@ body {
 
 
 /* --------------- CERCA TUYO ---------------*/
-
+.tiendasercatuyo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 65vh;
+    width:  100%;
+    background-color: var(--colorSecundario);
+    align-items: center;
+    justify-content: center;
+}
+#cont-fondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#fondo-cercatuyo {
+    position: sticky;
+    top: -20%;
+    /* height: 98%; */
+    width: 99vw;
+    filter:grayscale() saturate() opacity(0.5);
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+}
+#cercatuyoH2 {
+    color: var(--blancoSuave);
+    z-index: 2;
+    font-size: 3rem;
+    margin-bottom: -1.7rem;
+}
+#cercatuyoH1 {
+    color: var(--colorPrimario);
+    z-index: 2;
+}
+#cercatuyoP {
+    color: var(--blancoSuave);
+    z-index: 2;
+}
+#cercatuyoBtn {
+    display: flex;
+    height: 6vh;
+    width: 8rem;
+    margin-top: 2rem;
+    font-family: var(--font-paragraph);
+    font-size: 0.9rem;
+    color: var(--blanco);
+    border: var(--gris) 2px solid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+#cercatuyoBtn:hover {
+    border: var(--blanco) 2px solid;
+    transition: 0.4s;
+}
+.tiendasercatuyo a {
+    z-index: 2;    
+}
 
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
@@ -554,7 +648,24 @@ body {
 }
 /* Tablet vertical */
 @media (max-width: 768px) {
-   
+    #fondo-cercatuyo {
+        height: 98%;
+        width: auto;
+        overflow-x: hidden;
+    }
+    #cercatuyoH2 {
+        font-size: 1.2rem;
+        margin-bottom: -0.7rem
+    }
+    #cercatuyoH1 {
+        font-size: 2rem;
+    }
+    #cercatuyoP {
+        font-size: 0.8rem;
+    }
+    #cercatuyoBtn {
+
+    }
  }
 /* Mobil 1 */
 @media (max-width: 480px) { 
