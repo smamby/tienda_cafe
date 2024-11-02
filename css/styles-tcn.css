@@ -1,4 +1,4 @@
-body {
+main, html {  /* cambié body x main*/
     width: 100%;
     margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
     font-family: Arial, sans-serif;
@@ -9,10 +9,9 @@ body {
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
     background: #fff; /* Fondo blanco para el contenedor */
-    padding: none; /* Espaciado interno */
+    padding: 60px; /* Espaciado interno */
     border-radius: none /* Bordes redondeados */
-    box-shadow: none; /* Sombras para darle profundidad */
-}  
+}   
 
 .text-section {
     text-align: center;
@@ -26,7 +25,7 @@ p {
 
 .titulo {
     display: inline-block; /* Asegúrate de que el borde se ajuste al contenido */
-    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+    padding-bottom: 15px; /* Espacio entre el texto y la línea */
     position: relative; /* Necesario para posicionar el ::after */
 }
 
@@ -103,15 +102,19 @@ textarea {
 }
 
 button {
-    background: #5cb85c;
-    color: white;
+    background-color: var(--colorPrimario);
+    color: var(--colorSecundario);
+    font-weight: bold;
+    padding: 10px 20px;
     border: none;
-    padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
 }
- 
+
+
+button:hover {
+    background-color: #647852;
+}
 label {
     font-size: small;
     font-family: Roboto;
