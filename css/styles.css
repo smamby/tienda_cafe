@@ -191,7 +191,7 @@ body {
 footer {
     background-color: var(--colorSecundario);
     color: var(--blanco);
-    padding: 150px 0 10px;
+    padding: 50px 0 10px;
 }
 
 .footer-content {
