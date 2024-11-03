@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'Oswald_light';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_regular';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_bolder';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Monserrat_medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
+    --colorPrimario: #04c663;
+    --verdePalido: #647852;
+    --colorSecundario: #1A1A1A;
+    --blanco: #fff;
+    --blancoSuave: #eee;
+    --negro: #000;
+    --negroSuave: #333;
+    --gris: #666;     
+}
+
 /*************************página Tutoriales ***************************/
 
 main, html {  /* cambié body x main*/
@@ -50,6 +86,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
     height: 310px; /* Asegura que todas las imágenes tengan la misma altura */
     object-fit: cover; /* Ajusta la imagen para cubrir el área asignada sin distorsión */
     margin: 0; /* Elimina el margen de la imagen */
+    filter: brightness(0.9);
 }
 
 .grid-item h4 {
