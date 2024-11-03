@@ -582,23 +582,30 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 65vh;
+    height: 80vh;
     width:  100%;
     background-color: var(--colorSecundario);
     align-items: center;
     justify-content: center;
-}
-#cont-fondo {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow-x: hidden;
     overflow-y: hidden;
 }
+#cont-fondo {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+}
 #fondo-cercatuyo {
-    position: sticky;
-    top: -20%;
-    /* height: 98%; */
+    display:flex;
+    position: absolute;
+    translate: 0 -600px;
+    height: 120vh;
     width: 99vw;
     filter:grayscale() saturate() opacity(0.5);
     z-index: 1;
@@ -606,6 +613,7 @@ body {
     overflow-y: hidden;
     align-items: center;
 }
+
 #cercatuyoH2 {
     color: var(--blancoSuave);
     z-index: 2;
@@ -642,6 +650,7 @@ body {
     z-index: 2;    
 }
 
+
 /* Tablet horizontal */
 @media (max-width: 1080px) { 
    
@@ -652,6 +661,7 @@ body {
         height: 98%;
         width: auto;
         overflow-x: hidden;
+        translate: 0 -600px;
     }
     #cercatuyoH2 {
         font-size: 1.2rem;
