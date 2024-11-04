@@ -45,7 +45,7 @@ main, html {  /* cambié body x main*/
 .containerTCN {
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
-    background: #fff; /* Fondo blanco para el contenedor */
+    background: var(--blanco); /* Fondo blanco para el contenedor */
     padding: 60px; /* Espaciado interno */
     border-radius: none /* Bordes redondeados */
 }   
@@ -56,45 +56,54 @@ main, html {  /* cambié body x main*/
 }
  
 .tituloTCN {
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font-bolder);
+    color: #2d2a2a;
+    font-weight: 600;
+    font-size: 2.2rem;
     display: inline-block; /* Asegúrate de que el borde se ajuste al contenido */
     padding-bottom: 15px; /* Espacio entre el texto y la línea */
     position: relative; /* Necesario para posicionar el ::after */
 }
 
-.titulo::after {
+.tituloTCN::after {
     content: ''; /* Necesario para mostrar el pseudo-elemento */
     display: block; /* Que ocupe una línea completa */
-    width: 70%; /* Ajusta el tamaño de la línea */
-    height: 3px; /* Grosor de la línea */
+    width: 65%; /* Ajusta el tamaño de la línea */
+    height: 1.5px; /* Grosor de la línea */
     background-color: #c7a17adb; /* Color de la línea */
     position: relative; /* Posicionar respecto al .titulo */
     left: 33px; /* Alinear a la izquierda */
     top: 20px;
     bottom: 0; /* Alinear al fondo */
 }
-
+ 
 h1 {
-    font-size: 14px; 
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px; 
     color: #c7a17a; /* Color del título */
     padding-top: 50px;
+    padding-bottom: 15px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
 h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
     font-size: 14px; 
     text-align: center;
-    color: #666; /* Color del encabezado */
+    padding-top: 30px;
+    color: #777; /* Color del encabezado */
     margin-bottom: 20px; /* Espacio inferior */
 }
  
 .contact-form {
-    background: #fff;
-    padding: 20px;
+    background: var(--blanco);
+    padding: 1px;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
 
 .form-row {
@@ -111,6 +120,7 @@ h2 {
 }
  
 label {
+    font-family: "Lato", sans-serif;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -148,7 +158,7 @@ button {
 
 
 button:hover {
-    background-color: #647852;
+    background-color: var(--verdePalido);
 }
 label {
     font-size: small;
