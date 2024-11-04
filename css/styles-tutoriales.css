@@ -34,7 +34,7 @@
     --gris: #666;     
 }
 
-/*************************página Tutoriales ***************************/
+/*****************página Tutoriales **********************/
 
 main, html {  /* cambié body x main*/
     width: 100%; 
@@ -79,6 +79,12 @@ ul.tips { /* personalicé ul para q no afecte header*/
     display: flex; /* Cambiado para manejar el contenido */
     justify-content: center; /* Centro el contenido */
     align-items: center; /* Centro verticalmente el contenido */
+    transition: transform 0.3s, box-shadow 0.3s; /* Agregado para la animación */
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente en hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Añade sombra para darle profundidad */
 }
 
 .grid-item img {
@@ -87,6 +93,17 @@ ul.tips { /* personalicé ul para q no afecte header*/
     object-fit: cover; /* Ajusta la imagen para cubrir el área asignada sin distorsión */
     margin: 0; /* Elimina el margen de la imagen */
     filter: brightness(0.9);
+    transition: filter 0.3s, transform 0.3s; /* Agregado para la animación */
+}
+
+.grid-item:hover img {
+    filter: brightness(0.5); /* Reduce el brillo de la imagen al 50% */
+    transform: scale(1.1); /* Aumenta ligeramente la imagen */
+}
+
+.grid-item {
+    flex: 0 0 calc(13cm); /* Espacios cuadrados de 13 cm */
+    margin: 1.1cm;
 }
 
 .grid-item h4 {

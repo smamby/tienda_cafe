@@ -34,6 +34,7 @@
     --gris: #666;     
 }
 
+
 main, html {  /* cambié body x main*/
     width: 100%;
     margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
@@ -41,7 +42,7 @@ main, html {  /* cambié body x main*/
     overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
-.container {
+.containerTCN {
     max-width: 1200px; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor */
     background: #fff; /* Fondo blanco para el contenedor */
@@ -49,17 +50,14 @@ main, html {  /* cambié body x main*/
     border-radius: none /* Bordes redondeados */
 }   
 
-.text-section {
+.text-sectionTCN {
     text-align: center;
     margin-bottom: 10px; /* Espacio debajo de la sección de texto */
 }
-
-p {
+ 
+.tituloTCN {
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.titulo {
     display: inline-block; /* Asegúrate de que el borde se ajuste al contenido */
     padding-bottom: 15px; /* Espacio entre el texto y la línea */
     position: relative; /* Necesario para posicionar el ::after */
@@ -80,6 +78,7 @@ p {
 h1 {
     font-size: 14px; 
     color: #c7a17a; /* Color del título */
+    padding-top: 50px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
