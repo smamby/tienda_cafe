@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Té</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-nuestroMenu.css">
+    <link rel="stylesheet" href="css/styles-franquicias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header">
@@ -39,88 +42,51 @@
             
             <div class="nav-line"></div>
         </div>
+
     </header>
-
-    <div class="cover">
-        <div class="frente">
-            <h2>SOMOS TE</h2>
-            <h1>Y MUCHO MAS</h1>
-            <p>Veni a disfrutar nuestros platos, perfectos para cada momento de tu dia</p>
-        </div>
+    <div class="containerTCN">
+    <div class="text-sectionTCN">
+        <h1>CONOCÉ TODAS LAS OPCIONES</h1>
+        <p class="tituloTCN">CONVERTITE EN FRANQUICIADO</p>
     </div>
-    
-    <main class="contenedor">
+    <h2>Querés ser parte de este equipo? Dejanos tus datos para recibir más información, y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquincia Tienda de Té!</h2>
 
-
-            <div class="menu">
-                <div class="left-1 image-overlay item">
-                        <img src="img/cheesecake.webp" alt="cheesecake">
-                        <div class="text-overlay-up">   
-                            <p>DEJATE TENTAR CON NUESTRAS</p>
-                            <h3>DULZURAS</h3>
-                        </div>
-                </div>
-                <div class="left-2 item">
-                        <img src="img/tortahor.jpg" alt="tortahor">
-                </div>
-                <div class="left-3 item">
-                        <img src="img/nuestro-menu-cookie.jpg" alt="cookie">
-                </div>
-
-
-                <div class="right-1 item">
-                    <img src="img/tortaver.jpeg" alt="tortaver">
-                </div>
-                <div class="right-2 item">
-                    <img src="img/nuestro-menu-alf.jpg" alt="alfajor">
-                </div>
+    <form class="contact-form" aria-label="Formulario de contacto" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-col">
+                <label for="nombre">Nombre </label>
+                <input type="text" id="nombre" name="your-nombre" required />
             </div>
-
-
-
-            <div class="menu">
-                <div class="down-left-1 image-overlay item">
-                    <img src="img/nuestro-menu-salad.jpg" alt="salad">
-                    <div class="text-overlay">
-                        <p>EN CADA MOMENTO DE TU DÍA</p>
-                        <h3>PLATOS RIQUÍSIMOS</h3>
-                    </div>
-                </div>
-                <div class="down-left-2 item">
-                    <img src="img/nuestro-menu-salad2.jpg" alt="salad2">
-                </div>
-
-                <div class="down-right-1 item">
-                    <img src="img/nuestro-menu-bagel.png" alt="bagel">
-                </div>
-                <div class="down-right-2 item">
-                    <img src="img/nuestro-menu-sand.jpg" alt="sand">
-                </div>
-                <div class="down-right-3 item">
-                    <img src="img/nuetro-menu-tost.jpg" alt="tost">
-                </div>
+            <div class="form-col">
+                <label for="apellido">Apellido </label>
+                <input type="text" id="apellido" name="your-apellido" required />
             </div>
-
-
-
-            <div class="menu-inferior">
-                <h2>CONOCÉ TODAS NUESTRAS OPCIONES</h2>
-
-                <div class="menu-imagenes">
-                    <img src="img/nuestro-menu-menu.jpg" alt="menu">
-                    <img src="img/nuestro-menu-menu2.jpg" alt="menu2">
-                    <img src="img/nuestro-menu-menu.jpg" alt="menu">
-                    <img src="img/nuestro-menu-menu2.jpg" alt="menu2">
-                </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <label for="email">E-mail </label>
+                <input type="email" id="email" name="your-email" required />
             </div>
-
-
-
-
-
-
-        
-    </main>
+            <div class="form-col">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="your-telefono" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-col">
+                <label for="cargo">¿Cómo llegaste a nosotros? </label>
+                <input type="text" id="cargo" name="your-cargo" required />
+            </div>
+            <div class="form-col">
+                <label for="zona">En qué zona te gustaría instalar la franquincia?</label>
+                <input type="text" id="zona" name="your-zona" required />
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="submit">ENVIAR</button>
+        </div>
+    </form>
+</div>
 
     <footer>
         <div class="container">

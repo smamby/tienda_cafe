@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Oswald_light';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_regular';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_bolder';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Monserrat_medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
+    --colorPrimario: #04c663;
+    --verdePalido: #647852;
+    --colorSecundario: #1A1A1A;
+    --blanco: #fff;
+    --blancoSuave: #eee;
+    --negro: #000;
+    --negroSuave: #333;
+    --gris: #666;     
+}
+
+
+main, html {  /* cambié body x main*/
+    width: 100%;
+    margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.containerTCN {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    background: var(--blanco); /* Fondo blanco para el contenedor */
+    padding: 60px; /* Espaciado interno */
+    border-radius: none /* Bordes redondeados */
+}   
+
+.text-sectionTCN {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio debajo de la sección de texto */
+}
+ 
+.tituloTCN {
+    font-family: var(--font-bolder);
+    color: #2d2a2a;
+    font-weight: 600;
+    font-size: 2.2rem;
+    display: inline-block; /* Asegúrate de que el borde se ajuste al contenido */
+    padding-bottom: 15px; /* Espacio entre el texto y la línea */
+    position: relative; /* Necesario para posicionar el ::after */
+}
+
+.tituloTCN::after {
+    content: ''; /* Necesario para mostrar el pseudo-elemento */
+    display: block; /* Que ocupe una línea completa */
+    width: 35%; /* Ajusta el tamaño de la línea */
+    height: 1.5px; /* Grosor de la línea */
+    background-color: #c7a17adb; /* Color de la línea */
+    position: relative; /* Posicionar respecto al .titulo */
+    left: 120px; /* Alinear a la izquierda */
+    top: 20px;
+    bottom: 0; /* Alinear al fondo */
+}
+ 
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px; 
+    color: #c7a17a; /* Color del título */
+    padding-top: 50px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 14px; 
+    text-align: center;
+    padding-top: 30px;
+    color: #777; /* Color del encabezado */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+ 
+.contact-form {
+    background: var(--blanco);
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1cm;
+    margin-bottom: 45px;
+}
+
+.form-col {
+    flex: 1;
+    min-width: 250px; /* Alto mínimo de las columnas */
+    margin-right: 15px;
+}
+ 
+label {
+    font-family: "Lato", sans-serif;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+ 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+ 
+textarea {
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+}
+
+button {
+    background-color: var(--colorPrimario);
+    color: var(--colorSecundario);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: var(--verdePalido);
+}
+label {
+    font-size: small;
+    font-family: Roboto;
+    display: block; /* Elementos de etiqueta en bloque */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+    font-weight: normal; /* Negrita para etiquetas */
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Contenedor más estrecho para pantallas pequeñas */
+    }
+}

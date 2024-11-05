@@ -43,30 +43,132 @@ img {
 
 .menu  {
     max-width: 120rem;
-    height: 60rem;
     width: 90%;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    row-gap: 10px;
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
     overflow: hidden;
 }
 
-.menu-item {
+.left-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.left-2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.left-3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.right-1 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+} 
+.right-2 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+
+
+.down-left-1 {
+    grid-column: 1;
+    grid-row: 1 /span 2;
+}
+
+.image-overlay {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+}
+.text-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    text-align: right;
+}
+.text-overlay p {
+    font-size: 16px;
+    width: 80%;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    background-color: hsl(0, 0%, 88%,0.8);
+}
+.text-overlay h3 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    border-color: black;
 }
 
-.menu-item-texto {
+.down-left-2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.down-right-1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.down-right-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.down-right-3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+
+.menu-inferior{
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.menu-inferior h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-imagenes {
+    display: flex
+}
+
+
+
+.text-overlay-up {
     position: absolute;
     bottom: 10px;
     left: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+    text-align: left;
+}
+.text-overlay-up p {
+    font-size: 16px;
+    width: 80%;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+    background-color: hsl(0, 0%, 88%,0.8);
+}
+.text-overlay-up h3 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    border-color: black;
+}
+
+.item {
+    transition: transform 0.3s
+}
+.item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente en hover */
 }
