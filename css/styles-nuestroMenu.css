@@ -179,14 +179,14 @@ p {
     margin: 0;
     justify-self: right;
     font-weight: bold;
-    color: black;
-    background-color: hsl(0, 0%, 88%,0.8);
+    color: var(--colorSecundario);
+    background-color: var(--blancoSuave);
 }
 .text-overlay h1 {
     font-size: 3rem;
     margin: 0;
     font-weight: bold;
-    border-color: black;
+    border-color: var(--colorSecundario);
 }
 
 .down-left-2 {
@@ -210,7 +210,7 @@ p {
 
 .menu-inferior{
     text-align: center;
-    background-color: #e0e0e0;
+    background-color: var(--blancoSuave);
     padding: 0 20px;
     margin: 0 0 2rem;
 }
@@ -218,7 +218,7 @@ p {
 .menu-inferior h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: var(--gris);
     margin-bottom: 20px;
     padding: 5vh 0;
 }
@@ -233,7 +233,7 @@ p {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white;
+    color: var(--blanco);
     text-align: left;
 }
 .text-overlay-up p {
@@ -242,14 +242,14 @@ p {
     padding: 4px 12px;
     margin: 0;
     font-weight: bold;
-    color: black;
-    background-color: hsl(0, 0%, 88%,0.8);
+    color: var(--colorSecundario);
+    background-color: var(--blancoSuave);
 }
 .text-overlay-up h1 {
     font-size: 3rem;
     margin: 0;
     font-weight: bold;
-    border-color: black;
+    border-color: var(--colorSecundario);
 }
 
 .img-menu {

@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'Oswald_light';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_regular';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_bolder';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Monserrat_medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
+    --colorPrimario: #04c663;
+    --verdePalido: #647852;
+    --colorSecundario: #1A1A1A;
+    --blanco: #fff;
+    --blancoSuave: #eee;
+    --negro: #000;
+    --negroSuave: #333;
+    --gris: #666;     
+}
+
 /******************PAGINA CONTACTOS************************************/
 /* Main Content Container */
 .container {
@@ -17,6 +53,12 @@
     position: relative;
 }
 
+h2 {
+    font-family: var(--font-bolder);
+}
+p {
+    font-family: var(--font-paragraph);
+}
 .contact-form {
     flex: 2;
     padding-right: 40px;
@@ -29,7 +71,7 @@
     top: 0;
     height: 100%;
     width: 1px;
-    background-color: var(--gris);
+    background-color: var(--blancoSuave);
 }
 
 .social-media {
@@ -40,12 +82,12 @@
 .contact-form h2,
 .social-media h2 {
     margin-bottom: 20px;
-    color: var(--negroSuave);
+    color: var(--colorSecundario);
 }
 
 .parrafo-formulario {
     margin-bottom: 20px;
-    color: var(--negroSuave);
+    color: var(--colorSecundario);
 }
 
 .form-group {
@@ -55,8 +97,8 @@
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid var(--gris);
-    border-radius: 4px;
+    border: 2px solid var(--blancoSuave);
+    border-radius: 0px;
     margin-top: 5px;
 }
 
@@ -76,7 +118,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #647852;
+    background-color: var(--verdePalido);
 }
 
 /* Social Icons */
@@ -102,7 +144,7 @@ textarea {
 .facebook-icon {
     background-color: var(--gris);
     color: var(--blanco);
-    border: 2px solid var(--negro);
+    border: 2px solid var(--colorSecundario);
 }
 
 .facebook-icon:hover {

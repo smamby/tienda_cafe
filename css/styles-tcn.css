@@ -38,7 +38,7 @@
 main, html {  /* cambié body x main*/
     width: 100%;
     margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
-    font-family: Arial, sans-serif;
+    font-family: var(--font-paragraph), Arial, sans-serif;
     overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
@@ -57,7 +57,7 @@ main, html {  /* cambié body x main*/
  
 .tituloTCN {
     font-family: var(--font-bolder);
-    color: #2d2a2a;
+    color: var(--colorSecundario);
     font-weight: 600;
     font-size: 2.2rem;
     display: inline-block; /* Asegúrate de que el borde se ajuste al contenido */
@@ -70,39 +70,39 @@ main, html {  /* cambié body x main*/
     display: block; /* Que ocupe una línea completa */
     width: 65%; /* Ajusta el tamaño de la línea */
     height: 1.5px; /* Grosor de la línea */
-    background-color: #c7a17adb; /* Color de la línea */
+    background-color: var(--colorPrimario); /* Color de la línea */
     position: relative; /* Posicionar respecto al .titulo */
-    left: 33px; /* Alinear a la izquierda */
+    justify-self: center; /* Alinear a la izquierda */
     top: 20px;
     bottom: 0; /* Alinear al fondo */
 }
  
-h1 {
-    font-family: "Lato", sans-serif;
+h3 {
+    font-family: var(--font-paragraph), sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 16px; 
-    color: #c7a17a; /* Color del título */
+    color: var(--colorPrimario); /* Color del título */
     padding-top: 50px;
     padding-bottom: 15px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
 
-h2 {
-    font-family: "Lato", sans-serif;
+p {
+    font-family: var(--font-paragraph), sans-serif;
     font-weight: 400;
     font-size: 14px; 
     text-align: center;
     padding-top: 30px;
-    color: #777; /* Color del encabezado */
+    color: var(--gris); /* Color del encabezado */
     margin-bottom: 20px; /* Espacio inferior */
 }
  
 .contact-form {
     background: var(--blanco);
     padding: 1px;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,7 +120,7 @@ h2 {
 }
  
 label {
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-paragraph), sans-serif;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -133,8 +133,8 @@ input[type="file"],
 textarea {
     width: 100%;
     padding: 13px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid var(--blancoSuave);
+    border-radius: 0px;
     font-size: 14px;
 }
 
@@ -162,7 +162,7 @@ button:hover {
 }
 label {
     font-size: small;
-    font-family: Roboto;
+    font-family: var(--font-paragraph);
     display: block; /* Elementos de etiqueta en bloque */
     margin-bottom: 5px; /* Espacio debajo de la etiqueta */
     font-weight: normal; /* Negrita para etiquetas */
