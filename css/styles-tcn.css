@@ -33,6 +33,38 @@
     --negroSuave: #333;
     --gris: #666;     
 }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: var(--font-bolder);
+    font-size: 4rem;
+}
+h2 {
+    font-family: var(--font-regular);
+    font-size: 3rem;
+}
+p {
+    font-family: var(--font-paragraph);
+}
+a {
+    text-decoration: none;
+}
+html {
+    width: 100%;
+}
+body {
+    background-color: var(--colorSecundario);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 
 main, html {  /* cambié body x main*/

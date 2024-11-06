@@ -88,6 +88,10 @@ h3 {
     background-color: #62784f;
 }
 
+/* .footer-bottom {
+    margin: 0 18%;
+} */
+
 /* Tablets y pantallas medianas (2 cards por fila) */
 @media screen and (max-width: 992px) {
     .cards-container {

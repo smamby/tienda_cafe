@@ -39,7 +39,7 @@
 main, html {  /* cambié body x main*/
     width: 100%; 
     font-family: 'Oswald', sans-serif; /* ver Roboto*/
-    margin: 0; /* Elimina márgenes del body para prevenir scroll horizontal */
+    margin-top: 92px; /* Elimina márgenes del body para prevenir scroll horizontal */
     overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
