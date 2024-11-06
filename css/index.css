@@ -515,14 +515,15 @@ body {
     font-size: 2rem;
 }
 #content-cont {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 1rem 10vw;
 }
 .col {
     margin: 0 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .col h3 {
     color: var(--colorPrimario);
@@ -537,13 +538,16 @@ body {
 }
 .col2 img {
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 .prodC1 {
     display: flex;
     flex-direction: column;
     text-align: right;
     justify-content: space-between;
+}
+.prodC1, .prodC3 {
+    margin-top: 2rem;
 }
 
 /* Tablet horizontal */

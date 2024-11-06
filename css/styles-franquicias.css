@@ -120,7 +120,7 @@ h2 {
 }
  
 label {
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-paragraph), Arial;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -132,7 +132,7 @@ input[type="tel"],
 textarea {
     width: 100%;
     padding: 13px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--blancoSuave);
     border-radius: 4px;
     font-size: 14px;
 }

@@ -152,7 +152,7 @@ p {
 }
  
 label {
-    font-family: var(--font-paragraph), sans-serif;
+    font-family:  var(--font-paragraph), Arial;
     display: block;
     margin-bottom: 5px;
     font-weight: bold;

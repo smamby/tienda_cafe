@@ -112,7 +112,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
     left: 40px; /* Ajusta la posición izquierda según sea necesario */
     right: 40px;
     color: white; /* Cambia el color del texto según tus necesidades */
-   /padding: 5px; /* Espaciado interno para el texto */
+    padding: 5px; /* Espaciado interno para el texto */
     border-radius: 5px; /* Radio para un diseño más suave */
     font-size: x-large;
 }

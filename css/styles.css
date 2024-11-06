@@ -1,14 +1,37 @@
-:root {
+@font-face {
+    font-family: 'Oswald_light';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_regular';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_bolder';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Monserrat_medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
     --colorPrimario: #04c663;
+    --verdePalido: #647852;
     --colorSecundario: #1A1A1A;
     --blanco: #fff;
     --blancoSuave: #eee;
     --negro: #000;
     --negroSuave: #333;
-    --gris: #666;    
-    
-
-    --fuentePrincipal: 'Roboto', sans-serif;
+    --gris: #666;     
 }
 
 /* Reset y estilos generales */
@@ -19,7 +42,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family:  var(--font-paragraph), Arial;
     line-height: 1.6;
 }
 

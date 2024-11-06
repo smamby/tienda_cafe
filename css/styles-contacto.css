@@ -59,6 +59,9 @@ h2 {
 p {
     font-family: var(--font-paragraph);
 }
+label {
+    font-family: var(--font-paragraph);
+}
 .contact-form {
     flex: 2;
     padding-right: 40px;
