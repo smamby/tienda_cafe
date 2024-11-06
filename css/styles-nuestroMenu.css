@@ -1,22 +1,43 @@
-/** NUESTRO MENU **/
-
-html {
-    font-size: 62.5%;
+@font-face {
+    font-family: 'Oswald_light';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
 }
-.contenedor {
-    max-width: 120rem;
-    width: 90%;
-    margin: 0 auto;
+@font-face {
+    font-family: 'Oswald_regular';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200;
+}
+@font-face {
+    font-family: 'Oswald_bolder';
+    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Monserrat_medium';
+    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
 }
 
-.cover {
-    background-image: url(../img/nuestroMenu.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+:root {    
+    font-size: 16px;
+    --font-light: 'Oswald_light';
+    --font-regular:'Oswald_regular';
+    --font-bolder: 'Oswald_bolder';
+    --font-paragraph: 'Monserrat_medium';
+    --colorPrimario: #04c663;
+    --verdePalido: #647852;
+    --colorSecundario: #1A1A1A;
+    --blanco: #fff;
+    --blancoSuave: #eee;
+    --negro: #000;
+    --negroSuave: #333;
+    --gris: #666;     
 }
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 h1 {
     font-family: var(--font-bolder);
     font-size: 4rem;
@@ -27,9 +48,67 @@ h2 {
 }
 p {
     font-family: var(--font-paragraph);
-    font-size: 2rem;
 }
-img {
+a {
+    text-decoration: none;
+}
+html {
+    width: 100%;
+}
+body {
+    background-color: var(--colorSecundario);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/** NUESTRO MENU **/
+
+.contenedor {
+    background-color: var(--blancoSuave);
+    width: 100%;
+    padding: 0 8vw;
+}
+
+.cover {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url(../img/nuestroMenu.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    margin-top: 92px;
+}
+
+/* h1 {
+    font-family: var(--font-bolder);
+    font-size: 4rem;
+}
+h2 {
+    font-family: var(--font-regular);
+    font-size: 3rem;
+}
+p {
+    font-family: var(--font-paragraph);
+    font-size: 2rem;
+} */
+.text {
+    width: 100%;
+    margin-right: 40%;
+    margin-left: 14%;
+    color: var(--blanco);
+}
+#carrusel-h1 {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.img-menu {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -51,10 +130,12 @@ img {
     gap: 2rem;
     overflow: hidden;
 }
-
+.item {
+    overflow: hidden;
+}
 .left-1 {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1;    
 }
 .left-2 {
     grid-column: 1;
@@ -92,15 +173,17 @@ img {
     text-align: right;
 }
 .text-overlay p {
-    font-size: 16px;
-    width: 80%;
+    font-size: 0.9rem;
+    width: fit-content;
+    padding: 4px 12px;
     margin: 0;
+    justify-self: right;
     font-weight: bold;
     color: black;
     background-color: hsl(0, 0%, 88%,0.8);
 }
-.text-overlay h3 {
-    font-size: 30px;
+.text-overlay h1 {
+    font-size: 3rem;
     margin: 0;
     font-weight: bold;
     border-color: black;
@@ -128,7 +211,8 @@ img {
 .menu-inferior{
     text-align: center;
     background-color: #e0e0e0;
-    padding: 20px;
+    padding: 0 20px;
+    margin: 0 0 2rem;
 }
 
 .menu-inferior h2 {
@@ -136,6 +220,7 @@ img {
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
+    padding: 5vh 0;
 }
 
 .menu-imagenes {
@@ -152,23 +237,131 @@ img {
     text-align: left;
 }
 .text-overlay-up p {
-    font-size: 16px;
-    width: 80%;
+    font-size: 0.9rem;
+    width: fit-content;
+    padding: 4px 12px;
     margin: 0;
     font-weight: bold;
     color: black;
     background-color: hsl(0, 0%, 88%,0.8);
 }
-.text-overlay-up h3 {
-    font-size: 30px;
+.text-overlay-up h1 {
+    font-size: 3rem;
     margin: 0;
     font-weight: bold;
     border-color: black;
 }
 
-.item {
+.img-menu {
     transition: transform 0.3s
 }
-.item:hover {
+.img-menu:hover {
     transform: scale(1.05); /* Aumenta el tamaño ligeramente en hover */
+}
+
+/* --------------- CERCA TUYO ---------------*/
+.tiendasercatuyo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 70vh;
+    width:  100%;
+    background-color: var(--colorSecundario);
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+#cont-fondo {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;    
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+}
+#fondo-cercatuyo {
+    display:flex;
+    position: absolute;
+    translate: 0 -350px;
+    height: 90vh;
+    width: 100%;
+    filter:grayscale() saturate() opacity(0.5);
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+#cercatuyoH2 {
+    color: var(--blancoSuave);
+    z-index: 2;
+    font-size: 3rem;
+    margin-bottom: -1.7rem;
+}
+#cercatuyoH1 {
+    color: var(--colorPrimario);
+    z-index: 2;
+}
+#cercatuyoP {
+    color: var(--blancoSuave);
+    z-index: 2;
+}
+#cercatuyoBtn {
+    display: flex;
+    height: 6vh;
+    width: 8rem;
+    margin-top: 2rem;
+    font-family: var(--font-paragraph);
+    font-size: 0.9rem;
+    color: var(--blanco);
+    border: var(--gris) 2px solid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+#cercatuyoBtn:hover {
+    border: var(--blanco) 2px solid;
+    transition: 0.4s;
+}
+.tiendasercatuyo a {
+    z-index: 2;    
+}
+
+
+/* Tablet horizontal */
+@media (max-width: 1080px) { 
+   
+}
+/* Tablet vertical */
+@media (max-width: 768px) {
+    #fondo-cercatuyo {
+        height: 98%;
+        width: auto;
+        overflow-x: hidden;
+        translate: 0 -600px;
+    }
+    #cercatuyoH2 {
+        font-size: 1.2rem;
+        margin-bottom: -0.7rem
+    }
+    #cercatuyoH1 {
+        font-size: 2rem;
+    }
+    #cercatuyoP {
+        font-size: 0.8rem;
+    }
+    
+ }
+/* Mobil 1 */
+@media (max-width: 480px) { 
+  
+}
+/* Mobil 2 */
+@media (max-width: 375px) { 
+    
 }

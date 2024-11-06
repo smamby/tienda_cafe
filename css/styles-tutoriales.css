@@ -45,7 +45,7 @@ main, html {  /* cambié body x main*/
 
 .container {
     width: calc(100% - 40px); /* Ajustamos el ancho para que no exceda la pantalla */
-    margin-top: 100px; /* Mantener márgenes laterales */
+    margin-top: 0; /* Mantener márgenes laterales */
     margin-right: 30px;
     margin-left: 30px;
     padding-left: 15px;

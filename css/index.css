@@ -74,7 +74,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 113px 0 0 0;    
+    margin: 92px 0 0 0;    
     background-color: var(--blanco);
 }
 
@@ -582,7 +582,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 68vh;
+    height: 70vh;
     width:  100%;
     background-color: var(--colorSecundario);
     align-items: center;
@@ -604,9 +604,9 @@ body {
 #fondo-cercatuyo {
     display:flex;
     position: absolute;
-    translate: 0 -600px;
-    height: 110vh;
-    width: 99vw;
+    translate: 0 -350px;
+    height: 90vh;
+    width: 100%;
     filter:grayscale() saturate() opacity(0.5);
     z-index: 1;
     overflow-x: hidden;
@@ -673,9 +673,7 @@ body {
     #cercatuyoP {
         font-size: 0.8rem;
     }
-    #cercatuyoBtn {
-
-    }
+    
  }
 /* Mobil 1 */
 @media (max-width: 480px) { 

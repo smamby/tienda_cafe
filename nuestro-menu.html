@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-nuestroMenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="js/parallax.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -42,10 +43,15 @@
     </header>
 
     <div class="cover">
-        <div class="frente">
+        <!-- <div class="frente">
             <h2>SOMOS TE</h2>
             <h1>Y MUCHO MAS</h1>
             <p>Veni a disfrutar nuestros platos, perfectos para cada momento de tu dia</p>
+        </div> -->
+        <div class="text">
+            <h2 id="carrusel-h2">SOMOS TE</h2>
+            <h1 id="carrusel-h1">Y MUCHO MAS</h1>
+            <p  id="carrusel-p">Veni a disfrutar nuestros platos, perfectos para cada momento de tu dia.</p>     
         </div>
     </div>
     
@@ -54,25 +60,25 @@
 
             <div class="menu">
                 <div class="left-1 image-overlay item">
-                        <img src="img/cheesecake.webp" alt="cheesecake">
+                        <img class="img-menu" src="img/cheesecake.webp" alt="cheesecake">
                         <div class="text-overlay-up">   
                             <p>DEJATE TENTAR CON NUESTRAS</p>
-                            <h3>DULZURAS</h3>
+                            <h1>DULZURAS</h1>
                         </div>
                 </div>
                 <div class="left-2 item">
-                        <img src="img/tortahor.jpg" alt="tortahor">
+                        <img class="img-menu" src="img/tortahor.jpg" alt="tortahor">
                 </div>
                 <div class="left-3 item">
-                        <img src="img/nuestro-menu-cookie.jpg" alt="cookie">
+                        <img class="img-menu" src="img/nuestro-menu-cookie.jpg" alt="cookie">
                 </div>
 
 
                 <div class="right-1 item">
-                    <img src="img/tortaver.jpeg" alt="tortaver">
+                    <img class="img-menu" src="img/tortaver.jpeg" alt="tortaver">
                 </div>
                 <div class="right-2 item">
-                    <img src="img/nuestro-menu-alf.jpg" alt="alfajor">
+                    <img class="img-menu" src="img/nuestro-menu-alf.jpg" alt="alfajor">
                 </div>
             </div>
 
@@ -80,24 +86,24 @@
 
             <div class="menu">
                 <div class="down-left-1 image-overlay item">
-                    <img src="img/nuestro-menu-salad.jpg" alt="salad">
+                    <img class="img-menu" src="img/nuestro-menu-salad.jpg" alt="salad">
                     <div class="text-overlay">
                         <p>EN CADA MOMENTO DE TU DÍA</p>
-                        <h3>PLATOS RIQUÍSIMOS</h3>
+                        <h1>PLATOS RIQUÍSIMOS</h1>
                     </div>
                 </div>
                 <div class="down-left-2 item">
-                    <img src="img/nuestro-menu-salad2.jpg" alt="salad2">
+                    <img class="img-menu" src="img/nuestro-menu-salad2.jpg" alt="salad2">
                 </div>
 
                 <div class="down-right-1 item">
-                    <img src="img/nuestro-menu-bagel.png" alt="bagel">
+                    <img class="img-menu" src="img/nuestro-menu-bagel.png" alt="bagel">
                 </div>
                 <div class="down-right-2 item">
-                    <img src="img/nuestro-menu-sand.jpg" alt="sand">
+                    <img class="img-menu" src="img/nuestro-menu-sand.jpg" alt="sand">
                 </div>
                 <div class="down-right-3 item">
-                    <img src="img/nuetro-menu-tost.jpg" alt="tost">
+                    <img class="img-menu" src="img/nuetro-menu-tost.jpg" alt="tost">
                 </div>
             </div>
 
@@ -113,14 +119,20 @@
                     <img src="img/nuestro-menu-menu2.jpg" alt="menu2">
                 </div>
             </div>
-
-
-
-
-
-
-        
     </main>
+
+            <!-- --------------- CERCA TUYO -------------- -->
+        <section class="tiendasercatuyo">
+            <div id="cont-fondo">
+                <img src="img/index_cercatuyo.jpeg" alt="" class="animate" id="fondo-cercatuyo">                
+                <h2 id="cercatuyoH2">SIEMPRE HAY UNA</h2>
+                <h1 id="cercatuyoH1">TIENDA CERCA TUYO</h1>
+                <p id="cercatuyoP">Encontro nuestra sucursal mas cercana.</p>
+                <!-- <div id="cercatuyoBtn"><a href="/nuestro-menu.html">INGRESAR</a></div> -->
+                <a href="/nuestro-menu.html"><div id="cercatuyoBtn">INGRESAR</div></a>
+            </div>
+        </section>       
+    
 
     <footer>
         <div class="container">

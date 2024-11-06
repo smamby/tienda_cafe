@@ -105,15 +105,3 @@ setInterval(function () {
         
 }, 5000);
 
-
-const imgFondoCerTuy = document.getElementById('fondo-cercatuyo');
-
-window.addEventListener('scroll', () => {
-    let valueY = window.scrollY;
-    console.log(valueY);
-    
-    if (valueY > 2012 && valueY < 3356){
-        let y = (valueY - 2012) / 3.36
-        imgFondoCerTuy.style.top = `${y}px`;
-    }
-})
