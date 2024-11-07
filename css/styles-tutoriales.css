@@ -1,38 +1,4 @@
-@font-face {
-    font-family: 'Oswald_light';
-    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: 200;
-}
-@font-face {
-    font-family: 'Oswald_regular';
-    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: 200;
-}
-@font-face {
-    font-family: 'Oswald_bolder';
-    src: url('../assets/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Monserrat_medium';
-    src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype');
-}
-
-:root {    
-    font-size: 16px;
-    --font-light: 'Oswald_light';
-    --font-regular:'Oswald_regular';
-    --font-bolder: 'Oswald_bolder';
-    --font-paragraph: 'Monserrat_medium';
-    --colorPrimario: #04c663;
-    --verdePalido: #647852;
-    --colorSecundario: #1A1A1A;
-    --blanco: #fff;
-    --blancoSuave: #eee;
-    --negro: #000;
-    --negroSuave: #333;
-    --gris: #666;     
-}
+@import url('./variables.css');
 
 /*****************página Tutoriales **********************/
 
@@ -51,7 +17,7 @@ main, html {  /* cambié body x main*/
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
-    color: grey;
+    color: var(--gris);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,7 +38,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
 .grid-item {
     flex: 0 0 calc(13cm); /* Espacios cuadrados de 13 cm */
     margin: 1.1cm; /* Espacio de 1.5 cm entre los elementos */
-    border: 1px solid #ddd; /* Borde opcional */
+    border: 1px solid var(--blancoSueva); /* Borde opcional */
     border-radius: 5px; /* Radio opcional */
     overflow: hidden; /* Opcional: crea una vista limpia de la imagen */
     position: relative; /* Posicionamiento relativo para el contenedor */
@@ -118,7 +84,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
 }
 
 .button {
-    background-color: black;
+    background-color: var(--negro);
     color: white;
     padding: 10px;
     text-decoration: none;
