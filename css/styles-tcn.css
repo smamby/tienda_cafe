@@ -23,7 +23,7 @@ html {
     width: 100%;
 }
 body {
-    background-color: var(--colorSecundario);
+    background-color: var(--blanco);
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -46,7 +46,8 @@ main, html {  /* cambié body x main*/
     margin: 0 auto; /* Centra el contenedor */
     background: var(--blanco); /* Fondo blanco para el contenedor */
     padding: 60px; /* Espaciado interno */
-    border-radius: none /* Bordes redondeados */
+    border-radius: none; /* Bordes redondeados */
+    background-color: var(--blanco);
 }   
 
 .text-sectionTCN {

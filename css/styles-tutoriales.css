@@ -46,12 +46,13 @@ ul.tips { /* personalicé ul para q no afecte header*/
     justify-content: center; /* Centro el contenido */
     align-items: center; /* Centro verticalmente el contenido */
     transition: transform 0.3s, box-shadow 0.3s; /* Agregado para la animación */
+    overflow: hidden;
 }
 
-.grid-item:hover {
-    transform: scale(1.05); /* Aumenta el tamaño ligeramente en hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Añade sombra para darle profundidad */
-}
+/* .grid-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+} */
 
 .grid-item img {
     width: 100%;
@@ -62,7 +63,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
     transition: filter 0.3s, transform 0.3s; /* Agregado para la animación */
 }
 
-.grid-item:hover img {
+.grid-item:hover .img-tutgit  {
     filter: brightness(0.5); /* Reduce el brillo de la imagen al 50% */
     transform: scale(1.1); /* Aumenta ligeramente la imagen */
 }
@@ -98,6 +99,18 @@ ul.tips { /* personalicé ul para q no afecte header*/
     text-align: center; /* Centrar el texto en el botón */
     font-size: small;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+.button:hover {
+    color: var(--grisSuave);
+}
+
+.button:hover .img-tut:hover {
+    filter: brightness(0.5); 
+    transform: scale(1.1); 
+}
+h4 {
+    pointer-events: none;
 }
 
 
