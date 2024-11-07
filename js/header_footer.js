@@ -35,7 +35,7 @@ const footer = `
         <div class="footer-content">
             <div class="footer-logo">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="Tienda de Café">
+                    <img src="img/logo.png" alt="Tienda de Té">
                 </a>
             </div>
             
@@ -44,7 +44,7 @@ const footer = `
                     <h3>CONTENIDOS</h3>
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nuestro-te.html">Nuestro Café</a></li>
+                        <li><a href="nuestro-te.html">Nuestro Té</a></li>
                         <li><a href="nuestro-menu.html">Nuestro menú</a></li>
                     </ul>
                 </div>
@@ -53,7 +53,7 @@ const footer = `
                     <h3>NECESITÁS AYUDA</h3>
                     <ul>
                         <li><a href="tutoriales.html">Tutoriales</a></li>
-                        <li><a href="trabaja-con-nosotros.html">Trabajá en TDC</a></li>
+                        <li><a href="trabaja-con-nosotros.html">Trabajá en TDT</a></li>
                         <li><a href="franquicias.html">Franquicias</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
@@ -80,7 +80,7 @@ const footer = `
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© Copyright 2021 Tienda de Té - Todos los derechos reservados.</p>
+            <p>© Copyright 2024 Tienda de Té - Todos los derechos reservados.</p>
             <p>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
         </div>
     </div>
