@@ -23,13 +23,36 @@ main, html {  /* cambié body x main*/
     align-items: center;
 }
  
+p.tip, p.titulotip, p.titulotip1, ul.tips {
+    font-family: var(--font-regular);
+    color: var(--gris); 
+    font-stretch: expanded;
+}
+
+p.titulotip1 {
+    font-weight: bold;
+    font-size: xx-large;
+    font-stretch: expanded;
+    line-height: 2; /* Ajusta este valor según tus necesidades */
+}
+
+p.titulotip {
+    /*font-weight: bold;*/
+    font-size: x-large;
+    font-stretch: expanded;
+    line-height: 3; /* Ajusta este valor según tus necesidades */
+}
+
 ul.tips { /* personalicé ul para q no afecte header*/
     list-style-type: none;
     font-style: italic;
+    color: var(--gris);
 }
+
 .text-section {
     margin: 20px 0;
 }
+
 .grid {
     display: flex;
     flex-wrap: wrap;
