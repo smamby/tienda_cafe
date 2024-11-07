@@ -63,7 +63,7 @@ ul.tips { /* personalicé ul para q no afecte header*/
     transition: filter 0.3s, transform 0.3s; /* Agregado para la animación */
 }
 
-.grid-item:hover .img-tutgit  {
+.grid-item:hover .img-tut {
     filter: brightness(0.5); /* Reduce el brillo de la imagen al 50% */
     transform: scale(1.1); /* Aumenta ligeramente la imagen */
 }
