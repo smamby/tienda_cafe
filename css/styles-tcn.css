@@ -1,10 +1,5 @@
 @import url('./variables.css');
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 h1 {
     font-family: var(--font-bolder);
     font-size: 4rem;
@@ -22,7 +17,8 @@ a {
 html {
     width: 100%;
 }
-body {
+
+/* body {
     background-color: var(--blanco);
     display: flex;
     width: 100%;
@@ -31,7 +27,7 @@ body {
     justify-content: center;    
     margin-top: auto;
     margin-bottom: auto;
-}
+}   lo saco */
 
 
 main, html {  /* cambié body x main*/
@@ -72,7 +68,7 @@ main, html {  /* cambié body x main*/
     height: 1.5px; /* Grosor de la línea */
     background-color: var(--colorPrimario); /* Color de la línea */
     position: relative; /* Posicionar respecto al .titulo */
-    justify-self: center; /* Alinear a la izquierda */
+    justify-self: center; /* Alinear centro */
     top: 20px;
     bottom: 0; /* Alinear al fondo */
 }
@@ -102,7 +98,7 @@ p {
 .contact-form {
     background: var(--blanco);
     padding: 1px;
-    border-radius: 0px;
+    border-radius: 5px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
 
